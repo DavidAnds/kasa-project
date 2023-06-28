@@ -4,16 +4,16 @@ import {
     createBrowserRouter,
     RouterProvider
 } from "react-router-dom";
-import App from './App';
 import Home from "./pages/Home/Home";
 import Housing from "./pages/Housing/Housing";
 import About from "./pages/About/About";
 import Error404 from "./pages/404/404";
-import Root from "./pages/Root";
+import Layout from "./pages/Layout";
+import './index.css';
 
 const router = createBrowserRouter([
     {
-        element: <Root/>,
+        element: <Layout/>,
         errorElement: <Error404/>,
         children: [
             {
