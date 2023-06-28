@@ -1,0 +1,21 @@
+.container {
+    background-color: var(--clr-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+    flex-direction: column;
+}
+
+.copyright {
+    color: var(--clr-light);
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
+
+.logo {
+}
+
+.logo_container {
+}
+
