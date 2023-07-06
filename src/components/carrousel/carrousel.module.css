@@ -1,0 +1,38 @@
+.carrousel {
+    border-radius: var(--radius);
+    overflow: hidden;
+    width: 100%;
+    min-height: 200px;
+    position: relative;
+}
+
+.carrousel_item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease-in;
+}
+
+.carrousel_image{
+    object-fit: contain;
+}
+
+.carrousel_btn {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 0px;
+    border: none;
+    background: transparent;
+}
+.carrousel_next {
+    right: 0;
+}
+.carrousel_icon{
+    font-size: 40px;
+    color: var(--clr-light);
+    cursor: pointer;
+}

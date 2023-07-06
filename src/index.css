@@ -6,7 +6,9 @@
     --clr-dark: #000;
     --clr-dark-50: rgba(0, 0, 0, .6);
     --clr-light: #fff;
+    --clr-gray-50: #f6f6f6;
     --radius: 18px;
+    --radius-sm: 10px
 }
 
 /* Box sizing rules */

@@ -3,8 +3,6 @@ import data from "../../data/data.json"
 import styles from "./Home.module.css"
 
 function Home() {
-    console.log(data)
-
     return (
         <div className={styles.container}>
             <div className={styles.title_container}>
