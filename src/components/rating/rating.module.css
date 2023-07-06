@@ -1,0 +1,16 @@
+.rating {
+    display: flex;
+    column-gap: 6px;
+}
+
+.star {
+    font-size: 16px;
+}
+
+.star_filled {
+    color: var(--clr-primary);
+}
+
+.star_empty {
+    color: var(--clr-gray);
+}
