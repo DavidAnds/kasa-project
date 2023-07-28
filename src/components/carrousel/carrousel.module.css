@@ -2,7 +2,7 @@
     border-radius: var(--radius);
     overflow: hidden;
     width: 100%;
-    min-height: 200px;
+    min-height: 300px;
     position: relative;
 }
 
@@ -10,11 +10,11 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    transition: all .3s ease-in;
+    transition: all 0.3s ease-in;
 }
 
-.carrousel_image{
-    object-fit: contain;
+.carrousel_image {
+    object-fit: cover;
 }
 
 .carrousel_btn {
@@ -31,7 +31,7 @@
 .carrousel_next {
     right: 0;
 }
-.carrousel_icon{
+.carrousel_icon {
     font-size: 40px;
     color: var(--clr-light);
     cursor: pointer;
