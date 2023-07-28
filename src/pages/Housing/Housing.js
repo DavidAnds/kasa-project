@@ -3,16 +3,24 @@ import Carrousel from "../../components/carrousel/carrousel"
 import Dropdown from "../../components/dropdown/dropdown"
 import Rating from "../../components/rating/rating"
 import data from "../../data/data.json"
-import { useParams } from "react-router"
+import { useParams, useNavigate } from "react-router"
 import styles from "./Housing.module.css"
 
 function Housing() {
     const { id } = useParams()
     const [itemData, setItemData] = useState()
 
+    const navigate = useNavigate()
+
     useEffect(() => {
-        setItemData(data.find((element) => element.id === id))
-        console.log(id)
+        const selectedItem = data.find((element) => element.id === id)
+        console.log(selectedItem)
+
+        if (!selectedItem) {
+            navigate("/404")
+        } else {
+            setItemData(selectedItem)
+        }
     }, [])
 
     return (
