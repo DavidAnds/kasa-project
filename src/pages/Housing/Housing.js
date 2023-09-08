@@ -21,13 +21,15 @@ function Housing() {
         } else {
             setItemData(selectedItem)
         }
-    }, [])
+    }, [id])
 
     return (
         <div className={styles.container}>
             {itemData && (
                 <>
-                    <Carrousel images={itemData.pictures} />
+                    <div className={styles.carrousel}>
+                        <Carrousel images={itemData.pictures} />
+                    </div>
                     <div className={styles.texts}>
                         <h1 className={styles.title}>{itemData.title}</h1>
                         <p className={styles.location}>{itemData.location}</p>

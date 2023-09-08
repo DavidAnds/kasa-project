@@ -30,7 +30,7 @@
     border-radius: 8px;
     color: var(--clr-light);
     background-color: var(--clr-primary);
-    width: 100px;
+    width: 110px;
     font-size: 10px;
 }
 
@@ -63,4 +63,53 @@
 .description,
 .equipments {
     margin-top: 20px;
+}
+
+@media screen and (min-width: 700px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+    }
+
+    .carrousel {
+        grid-column: span 2;
+    }
+
+    .other {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .rating {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        column-gap: 40px;
+    }
+
+    .title {
+        font-size: 2.1rem;
+    }
+    .location {
+        font-size: 1.1rem;
+    }
+    .tag {
+        font-size: 0.9rem;
+        width: 150px;
+        border-radius: 30px;
+    }
+
+    .host_name {
+        font-size: 1.1rem;
+    }
+
+    .host_picture {
+        width: 64px;
+        height: 64px;
+    }
 }

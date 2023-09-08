@@ -32,3 +32,39 @@
     row-gap: 20px;
     align-items: center;
 }
+
+@media screen and (min-width: 700px) {
+    .content {
+        background-color: #f6f6f6;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        padding: 40px;
+        margin-top: 40px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .title_container {
+        height: 250px;
+    }
+
+    .title_backdrop {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .content {
+        background-color: #f6f6f6;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        padding: 40px;
+        margin-top: 40px;
+    }
+}

@@ -6,6 +6,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.container:hover {
+    box-shadow: 10px 15px 22px -1px rgba(0, 0, 0, 0.27);
+    transform: translateY(-5px);
 }
 
 .backdrop {
@@ -14,7 +20,7 @@
     padding: 10px 20px;
     height: 100%;
     width: 100%;
-    background: linear-gradient( transparent 50%, var(--clr-dark-50));
+    background: linear-gradient(transparent 50%, var(--clr-dark-50));
 }
 
 .title {

@@ -8,7 +8,17 @@ function Carrousel({ images }) {
     const ref = useRef(null)
 
     useLayoutEffect(() => {
-        setWidthCarrousel(ref.current.offsetWidth)
+        const handleResize = () => {
+            setWidthCarrousel(ref.current.offsetWidth)
+        }
+
+        handleResize()
+
+        window.addEventListener("resize", handleResize)
+
+        return () => {
+            window.removeEventListener("resize", handleResize)
+        }
     }, [])
 
     const nextImage = () => {
