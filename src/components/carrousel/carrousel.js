@@ -61,6 +61,12 @@ function Carrousel({ images }) {
                         onClick={prevImage}>
                         <BiChevronLeft className={styles.carrousel_icon} />
                     </button>
+
+                    <div className={styles.carrousel_index}>
+                        <p className={styles.carrousel_index_text}>
+                            {currentImage + 1}/{images.length}
+                        </p>
+                    </div>
                 </>
             )}
         </div>

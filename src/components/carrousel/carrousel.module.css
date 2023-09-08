@@ -32,6 +32,20 @@
     border: none;
     background: transparent;
 }
+
+.carrousel_index {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    color: var(--clr-light);
+}
+
 .carrousel_next {
     right: 0;
 }

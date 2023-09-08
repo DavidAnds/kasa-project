@@ -58,12 +58,14 @@ function Housing() {
                         <Dropdown
                             title="Description"
                             content={itemData.description}
+                            size="small"
                         />
                     </div>
                     <div className={styles.equipments}>
                         <Dropdown
                             title="Equipements"
                             content={itemData.equipments}
+                            size="small"
                         />
                     </div>
                 </>
